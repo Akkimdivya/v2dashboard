@@ -29,7 +29,7 @@ const DashTitle = () => {
           className="flex items-center space-x-2 bg-white text-gray-800 border border-gray-300 rounded-lg px-3 py-2 hover:bg-gray-100"
         >
           <FaPlus />
-          <span>Add Category</span>
+          <span>Add Widget</span>
         </button>
         <button className="bg-white text-gray-800 border border-gray-300 rounded-lg p-2 hover:bg-gray-100">
           <FaSync />
