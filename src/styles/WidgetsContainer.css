@@ -1,0 +1,14 @@
+.widgets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .no-widgets {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #999;
+  }
+  

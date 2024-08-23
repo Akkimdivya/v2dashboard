@@ -1,0 +1,136 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navbar .breadcrumbs {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    animation: breadcrumbsFadeIn 0.8s ease-in-out; /* Breadcrumbs animation */
+}
+
+.navbar .breadcrumbs .current-page {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.search-bar-ani {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    animation: iconFadeIn 0.7s ease-in-out; /* Search icon animation */
+}
+
+.custom-input {
+    padding-left: 40px;            
+    border: 1px solid #6d98d3d9;     
+    border-radius: 0.5rem;         /* Equivalent to rounded-lg */
+    width: 100%;                  
+    padding-top: 4px;              
+    padding-bottom: 4px;           
+    background-color: #f0f9ff;     
+  }
+  
+  .custom-input:focus {
+    outline: none;                 /* Equivalent to focus:outline-none */
+    border-color: #2563eb;         /* Equivalent to focus:border-blue-600 */
+  }
+  
+
+.navbar .bell-icon {
+    color: #699fea;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition for transform and color */
+}
+
+.navbar .bell-icon:hover {
+    transform: rotate(20deg);
+    color: #34498f; /* Change color on hover */
+}
+
+.navbar .profile {
+    width: 32px;
+    height: 32px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for transform and background-color */
+}
+
+.navbar .profile:hover {
+    transform: scale(1.1);
+    background-color: #cbd5e1; /* Slightly darker background on hover */
+}
+
+.navbar .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.navbar .profile img:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 8px 16px;
+    }
+
+    
+
+    .navbar .bell-icon {
+        margin-left: 10px;
+    }
+
+    .navbar .profile {
+        width: 28px;
+        height: 28px;
+        margin-left: 10px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes breadcrumbsFadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes containerSlideIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes iconFadeIn {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}

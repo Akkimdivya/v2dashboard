@@ -1,0 +1,78 @@
+/* Container for the category section */
+.category-container {
+    padding: 20px;
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Flexbox for aligning category title and delete button */
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Button to delete a category */
+.category-delete-button {
+    color: red;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Container for widgets */
+.widget-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Each widget styling */
+.widget {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 30px);
+    transition: transform 0.2s;
+}
+
+/* Widget hover effect */
+.widget:hover {
+    transform: translateY(-5px);
+}
+
+/* Add widget button styling */
+.add-widget-button {
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-widget-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Text inside add widget button */
+.add-widget-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+

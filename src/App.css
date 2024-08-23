@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.navbar_head{
+    color: rgb(3, 3, 110);
+    cursor: pointer;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.past2days {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1px;
+  border: 2px solid #0c1560;
+  height: 35px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.vertical-line {
+  width: 1.5px;
+  height: 24px;
+  margin-left: 5px;
+  background-color: #162398;
+}
+.custom-select {
+  background-color: transparent;
+  padding-left: 3px;
+  color: #0c1142ab;
+  border: none; 
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  appearance: auto; 
+  cursor: pointer;
+}
+
+.custom-select:focus {
+  border: none;
+  outline: none;
+}
+
+.custom-select option {
+  background-color: #333; 
   color: white;
+  border: none; 
 }
 
-.App-link {
-  color: #61dafb;
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Adds some spacing between the text and underline */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-blue-600 {
+  color: #2563eb; /* You can adjust the shade of blue if needed */
 }
+
+
+

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import Category from "./components/Category";
+import DashTitle from "./components/DashTitle";
+import ErrorBoundary from "./components/ErrorBoundary";
+import { DashboardProvider } from "./context/DashboardContext";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <DashboardProvider>
+        <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        <DashTitle />
+        <Category searchQuery={searchQuery} />
+        <Sidebar />
+      </DashboardProvider>
+    </ErrorBoundary>
   );
 }
 

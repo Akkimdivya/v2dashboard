@@ -1,0 +1,24 @@
+.widget-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .widget-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .widget-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .widget-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
